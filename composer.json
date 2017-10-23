@@ -1,6 +1,6 @@
 {
     "name": "prionyx/project-1",
-    "bin": "bin/brain-games",
+    "bin": ["bin/brain-games"],
     "version": "1.0.0",
     "authors": [
         {
