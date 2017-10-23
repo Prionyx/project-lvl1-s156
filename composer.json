@@ -1,0 +1,12 @@
+{
+    "name": "hexlet/project-1",
+    "bin": "bin/brain-games",
+    "version": "1.0.0",
+    "authors": [
+        {
+            "name": "Andrey Draganchuk",
+            "email": "spirifex@gmail.com"
+        }
+    ],
+    "require": {}
+}
