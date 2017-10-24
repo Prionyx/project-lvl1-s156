@@ -7,6 +7,9 @@
       "email": "spirifex@gmail.com"
     }
   ],
+  "scripts": {
+    "phpcs": "phpcs"
+   },
   "autoload": {
     "files": ["src/Cli.php"],
     "psr-4": {
@@ -16,6 +19,9 @@
   "require": {
     "wp-cli/php-cli-tools":"dev-master"
   },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "*"
+     },
   "repositories":[
     {
       "type":"git",
