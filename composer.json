@@ -9,7 +9,7 @@
   ],
   "autoload": {
     "files": ["src/Cli.php"],
-    "prr-4": {
+    "psr-4": {
       "BrainGames\\Cli\\": "src/"
     }
   },
