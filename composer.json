@@ -8,7 +8,10 @@
     }
   ],
   "autoload": {
-    "files": ["src/Cli.php"]
+    "files": ["src/Cli.php"],
+    "prr-4": {
+      "BrainGames\\Cli\\": "src/"
+    }
   },
   "require": {
     "wp-cli/php-cli-tools":"dev-master"
