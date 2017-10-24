@@ -1,11 +1,22 @@
 {
-    "name": "prionyx/project-1",
-    "bin": ["bin/brain-games"],
-    "authors": [
-        {
-            "name": "Andrey Draganchuk",
-            "email": "spirifex@gmail.com"
-        }
-    ],
-    "require": 	{}
+  "name": "prionyx/project-1",
+  "bin": ["bin/brain-games"],
+  "authors": [
+    {
+      "name": "Andrey Draganchuk",
+      "email": "spirifex@gmail.com"
+    }
+  ],
+  "autoload": {
+    "files": ["src/Cli.php"]
+  },
+  "require": 	{
+    "wp-cli/php-cli-tools":"dev-master"
+  },
+  "repositories":[
+    {
+      "type":"git",
+      "url":"https://github.com/wp-cli/php-cli-tools"
+    }
+  ]
 }
