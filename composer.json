@@ -8,7 +8,6 @@
     }
   ],
   "autoload": {
-    "files": ["src/Cli.php"],
     "psr-4": {
       "BrainGames\\Cli\\": "src"
     }
