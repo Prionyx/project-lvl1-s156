@@ -1,7 +1,7 @@
-<p>
-<a href="https://codeclimate.com/github/Prionyx/project-lvl1-s156/maintainability"><img src="https://api.codeclimate.com/v1/badges/ceccbee895224aba32d8/maintainability" /></a>
+#Code Climate Badges
 
-<a href="https://codeclimate.com/github/Prionyx/project-lvl1-s156/test_coverage"><img src="https://api.codeclimate.com/v1/badges/ceccbee895224aba32d8/test_coverage" /></a>
-</p>
+[![Maintainability](https://api.codeclimate.com/v1/badges/ceccbee895224aba32d8/maintainability)](https://codeclimate.com/github/Prionyx/project-lvl1-s156/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/ceccbee895224aba32d8/test_coverage)](https://codeclimate.com/github/Prionyx/project-lvl1-s156/test_coverage)
 
 # project-lvl1-s156
