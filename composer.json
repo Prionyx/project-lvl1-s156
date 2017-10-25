@@ -11,9 +11,9 @@
     "phpcs": "phpcs"
    },
   "autoload": {
-    "files": ["src/games/Cli.php", "src/games/Even.php", "src/games/Calc.php"],
+    "files": ["src/Cli.php", "src/games/Even.php", "src/games/Calc.php"],
     "psr-4": {
-      "BrainGames\\Cli\\": "src/games",
+      "BrainGames\\Cli\\": "src",
       "BrainGames\\Even\\": "src/games",
       "BrainGames\\Calc\\": "src/games"
     }
