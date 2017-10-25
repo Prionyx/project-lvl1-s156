@@ -50,4 +50,5 @@ function run_brain_calc($name)
                 break;
         }
     }
+    line("Congratulations, %s", $name);
 }
