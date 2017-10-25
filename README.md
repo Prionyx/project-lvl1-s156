@@ -7,5 +7,3 @@
 [![Build Status](https://travis-ci.org/Prionyx/project-lvl1-s156.svg?branch=master)](https://travis-ci.org/Prionyx/project-lvl1-s156)
 
 # project-lvl1-s156
-
-TEST TRAVIS
