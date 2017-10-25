@@ -11,9 +11,9 @@ function run_brain_even($name)
         line("Question: %s", $num);
         $ans = \cli\prompt("Your answer");
         if ($num % 2 == 0 && $ans == 'yes') {
-            echo "Correct!" . "\n";
+            line("Correct!");
         } elseif ($num % 2 == 1 && $ans == 'no') {
-            echo "Correct!" . "\n";
+            line("Correct!");
         } else {
             $correct = ($num % 2 == 0) ? 'yes' : 'no';
             line("%s is wrong answer ;(. Correct answer was %s. Let's try again, %s!", $ans, $correct, $name) . "\n";
