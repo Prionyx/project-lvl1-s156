@@ -40,7 +40,7 @@ function run_brain_calc($name)
                     return;
                 }
                 break;
-            case '-':
+            case '*':
                 if ($ans == ($num1 * $num2)) {
                     line("Correct!");
                 } else {
