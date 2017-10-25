@@ -11,10 +11,11 @@
     "phpcs": "phpcs"
    },
   "autoload": {
-    "files": ["src/Cli.php", "src/Even.php"],
+    "files": ["src/Cli.php", "src/Even.php", "src/Calc.php"],
     "psr-4": {
       "BrainGames\\Cli\\": "src",
-      "BrainGames\\Even\\": "src"
+      "BrainGames\\Even\\": "src",
+      "BrainGames\\Calc\\": "src"
     }
   },
   "require": {
