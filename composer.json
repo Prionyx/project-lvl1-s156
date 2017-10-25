@@ -1,6 +1,6 @@
 {
   "name": "prionyx/project-1",
-  "bin": ["bin/brain-games", "bin/brain-even"],
+  "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc"],
   "authors": [
     {
       "name": "Andrey Draganchuk",
