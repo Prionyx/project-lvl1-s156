@@ -4,51 +4,34 @@ namespace BrainGames\Calc;
 
 use function \cli\line;
 
-function run_brain_calc($name)
+function brain_calc()
 {
+    $hello = "What is the result of the expression?";
+    $quest = [];
+    $correct = [];
     for ($i = 0; $i < 3; $i++) {
         $num1 = rand(0, 100);
         $num2 = rand(0, 100);
         $rand = rand(0, 2);
         if ($rand == 0) {
             $oper = '+';
-            $correct = $num1 + $num2;
         } elseif ($rand == 1) {
             $oper = '-';
-            $correct = $num1 - $num2;
         } else {
             $oper = '*';
-            $correct = $num1 * $num2;
         }
-        line("Question: %s %s %s", $num1, $oper, $num2);
-        $ans = \cli\prompt("Your answer");
-        $wrong = "%s is wrong answer ;(. Correct answer was %s. Let's try again, %s!";
+        $quest[] = ("Question: $num1 $oper $num2");
         switch ($oper) {
             case '+':
-                if ($ans == ($num1 + $num2)) {
-                    line("Correct!");
-                } else {
-                    line($wrong, $ans, $correct, $name);
-                    return;
-                }
+                $correct[] = $num1 + $num2;
                 break;
             case '-':
-                if ($ans == ($num1 - $num2)) {
-                    line("Correct!");
-                } else {
-                    line($wrong, $ans, $correct, $name);
-                    return;
-                }
+                $correct[] = $num1 - $num2;
                 break;
             case '*':
-                if ($ans == ($num1 * $num2)) {
-                    line("Correct!");
-                } else {
-                    line($wrong, $ans, $correct, $name);
-                    return;
-                }
+                $correct[] = $num1 * $num2;
                 break;
         }
     }
-    line("Congratulations, %s", $name);
+    return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
 }

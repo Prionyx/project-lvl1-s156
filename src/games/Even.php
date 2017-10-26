@@ -2,23 +2,19 @@
 
 namespace BrainGames\Even;
 
-use function \cli\line;
-
-function run_brain_even($name)
+function brain_even()
 {
+    $hello = "Answer 'yes' if number even otherwise answer 'no'.";
+    $quest = [];
+    $correct = [];
     for ($i = 0; $i < 3; $i++) {
         $num = rand(1, 100);
-        line("Question: %s", $num);
-        $ans = \cli\prompt("Your answer");
-        if ($num % 2 == 0 && $ans == 'yes') {
-            line("Correct!");
-        } elseif ($num % 2 == 1 && $ans == 'no') {
-            line("Correct!");
+        $quest[$i] = "Question: $num";
+        if ($num % 2 == 0) {
+            $correct[] = 'yes';
         } else {
-            $correct = ($num % 2 == 0) ? 'yes' : 'no';
-            line("%s is wrong answer ;(. Correct answer was %s. Let's try again, %s!", $ans, $correct, $name) . "\n";
-            return;
+            $correct[] = 'no';
         }
     }
-    line("Congratulations, %s!", $name);
+    return ['game_hello' => $game_hello, 'quest' => $quest, 'correct' => $correct];
 }

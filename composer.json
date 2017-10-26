@@ -1,6 +1,6 @@
 {
   "name": "prionyx/project-1",
-  "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc"],
+  "bin": ["bin/brain-games", "bin/brain-even"],
   "authors": [
     {
       "name": "Andrey Draganchuk",
@@ -11,11 +11,12 @@
     "phpcs": "phpcs"
    },
   "autoload": {
-    "files": ["src/Cli.php", "src/games/Even.php", "src/games/Calc.php"],
+    "files": ["src/Cli.php", "src/games/Even.php", "src/games/Calc.php", "src/games/Gcd.php"],
     "psr-4": {
       "BrainGames\\Cli\\": "src",
       "BrainGames\\Even\\": "src/games",
-      "BrainGames\\Calc\\": "src/games"
+      "BrainGames\\Calc\\": "src/games",
+      "BrainGames\\Gcd\\": "src/games"
     }
   },
   "require": {
