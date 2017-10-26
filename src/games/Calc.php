@@ -2,8 +2,6 @@
 
 namespace BrainGames\Calc;
 
-use function \cli\line;
-
 function brain_calc()
 {
     $hello = "What is the result of the expression?";
