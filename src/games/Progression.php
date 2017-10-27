@@ -20,7 +20,7 @@ function progression()
 function brain_progression()
 {
     return function ($gamesCount) {
-        $hello = "Find the greatest common divisor of given numbers.";
+        $hello = "What number is missing in this progression?";
         $quest = [];
         $correct = [];
         for ($i = 0; $i < 3; $i++) {
