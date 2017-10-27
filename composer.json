@@ -1,6 +1,6 @@
 {
   "name": "prionyx/project-1",
-  "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc", "bin/brain-gcd", "bin/brain-balance", "bin/brain-progression"],
+  "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc", "bin/brain-gcd", "bin/brain-balance", "bin/brain-progression", "bin/brain-prime"],
   "authors": [
     {
       "name": "Andrey Draganchuk",
@@ -11,7 +11,7 @@
     "phpcs": "phpcs"
    },
   "autoload": {
-    "files": ["src/Cli.php", "src/GameCore.php", "src/games/Even.php", "src/games/Calc.php", "src/games/Gcd.php", "src/games/Balance.php", "src/games/Progression.php"],
+    "files": ["src/Cli.php", "src/GameCore.php", "src/games/Even.php", "src/games/Calc.php", "src/games/Gcd.php", "src/games/Balance.php", "src/games/Progression.php", "src/games/Prime.php"],
     "psr-4": {
       "BrainGames\\Cli\\": "src",
       "BrainGames\\GameCore\\": "src",
@@ -19,7 +19,8 @@
       "BrainGames\\Calc\\": "src/games",
       "BrainGames\\Gcd\\": "src/games",
       "BrainGames\\Balance\\": "src/games",
-      "BrainGames\\Progression\\": "src/games"
+      "BrainGames\\Progression\\": "src/games",
+      "BrainGames\\Prime\\": "src/games"
     }
   },
   "require": {
