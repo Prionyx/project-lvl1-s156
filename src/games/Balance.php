@@ -31,7 +31,7 @@ function brain_balance()
 
         for ($i = 0; $i < $gamesCount; $i++) {
             $num = rand(1, 1000000);
-            $question[] = $quest[] = "Question: $num";
+            $quest[] = "$num";
             $correct[] = implode('', balance(numToArray($num)));
         }
         return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];

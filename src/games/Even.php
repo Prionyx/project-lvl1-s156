@@ -10,7 +10,7 @@ function brain_even()
         $correct = [];
         for ($i = 0; $i < 3; $i++) {
             $num = rand(1, 100);
-            $quest[$i] = "Question: $num";
+            $quest[$i] = "$num";
             if ($num % 2 == 0) {
                 $correct[] = 'yes';
             } else {

@@ -19,7 +19,7 @@ function brain_calc()
             } else {
                 $oper = '*';
             }
-            $quest[] = ("Question: $num1 $oper $num2");
+            $quest[] = "$num1 $oper $num2";
             switch ($oper) {
                 case '+':
                     $correct[] = $num1 + $num2;

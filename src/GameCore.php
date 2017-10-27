@@ -22,7 +22,7 @@ function game($scenario = null)
     $correct = $logic['correct'];
     $question = $logic['quest'];
     for ($i = 0; $i < $gamesCount; $i++) {
-        line($question[$i]);
+        line("Question: %s", $question[$i]);
         $ans = \cli\prompt("Your answer");
         if ($correct[$i] == $ans) {
             line("Correct!");
