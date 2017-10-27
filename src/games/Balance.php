@@ -24,14 +24,16 @@ function balance($arr)
 
 function brain_balance()
 {
-    $hello = "Balance the given number.";
-    $quest = [];
-    $correct = [];
+    return function ($gamesCount) {
+        $hello = "Balance the given number.";
+        $quest = [];
+        $correct = [];
 
-    for ($i = 0; $i < 3; $i++) {
-        $num = rand(1, 1000000);
-        $question[] = $quest[] = "Question: $num";
-        $correct[] = implode('', balance(numToArray($num)));
-    }
-    return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
+        for ($i = 0; $i < $gamesCount; $i++) {
+            $num = rand(1, 1000000);
+            $question[] = $quest[] = "Question: $num";
+            $correct[] = implode('', balance(numToArray($num)));
+        }
+        return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
+    };
 }
