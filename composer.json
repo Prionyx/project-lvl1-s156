@@ -1,6 +1,7 @@
 {
   "name": "prionyx/project-1",
-  "bin": ["bin/brain-games", "bin/brain-even", "bin/brain-calc", "bin/brain-gcd", "bin/brain-balance", "bin/brain-progression", "bin/brain-prime"],
+  "bin": ["bin/brain-even", "bin/brain-calc", "bin/brain-gcd", "bin/brain-balance", "bin/brain-progression", "bin/brain-prime"],
+  "version":"1.0.0",
   "license": "MIT",
   "authors": [
     {
