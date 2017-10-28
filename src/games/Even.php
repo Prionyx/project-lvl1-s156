@@ -16,3 +16,8 @@ function brain_even()
         return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
     };
 }
+
+function run()
+{
+    \BrainGames\Cli\run(brain_even());
+}

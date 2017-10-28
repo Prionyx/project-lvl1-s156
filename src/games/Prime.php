@@ -27,3 +27,8 @@ function brain_isPrime()
         return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
     };
 }
+
+function run()
+{
+    \BrainGames\Cli\run(brain_isPrime());
+}

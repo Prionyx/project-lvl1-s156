@@ -18,3 +18,8 @@ function brain_gcd()
         return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
     };
 }
+
+function run()
+{
+    \BrainGames\Cli\run(brain_gcd());
+}

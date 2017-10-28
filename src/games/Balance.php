@@ -32,3 +32,8 @@ function brain_balance()
         return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
     };
 }
+
+function run()
+{
+    \BrainGames\Cli\run(brain_balance());
+}
