@@ -7,28 +7,27 @@ use function \cli\line;
 function game($scenario = null)
 {
     $gamesCount = 3;
-    line('Welcome to the Brain Game!');
-    if ($scenario) {
-        $logic = $scenario($gamesCount);
-        line($logic['hello']);
-        line();
+    $logics = [];
+    for ($i = 0; $i < $gamesCount; $i++) {
+        $logics[] = $scenario();
     }
+    line('Welcome to the Brain Game!');
+    $hello = $logics[0]['hello'];
+    line($hello);
+    line();
     $name = \cli\prompt('May I have your name?');
     line("Hello, %s!", $name);
-    if (!$scenario) {
-        return;
-    }
 
-    $correct = $logic['correct'];
-    $question = $logic['quest'];
-    for ($i = 0; $i < $gamesCount; $i++) {
-        line("Question: %s", $question[$i]);
+    foreach ($logics as $logic) {
+        $correct = $logic['correct'];
+        $quest = $logic['quest'];
+        line("Question: %s", $quest);
         $ans = \cli\prompt("Your answer");
-        if ($correct[$i] == $ans) {
-            line("Correct!");
+        if ($correct == $ans) {
+              line("Correct!");
         } else {
-            line("%s is wrong answer ;(. Correct answer was %s. Let's try again, %s!", $ans, $correct[$i], $name);
-            return;
+              line("%s is wrong answer ;(. Correct answer was %s. Let's try again, %s!", $ans, $correct, $name);
+              return;
         }
     }
     line("Congratulations, %s", $name);

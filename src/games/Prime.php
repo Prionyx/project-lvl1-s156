@@ -19,15 +19,11 @@ function isPrime($num)
 
 function brain_isPrime()
 {
-    return function ($gamesCount) {
+    return function () {
         $hello = "Answer 'yes' if number is prime otherwise answer 'no'.";
-        $quest = [];
-        $correct = [];
-        for ($i = 0; $i < $gamesCount; $i++) {
-            $num = rand(1, 1000);
-            $quest[] = "$num";
-            $correct[] = isPrime($num);
-        }
+        $num = rand(1, 1000);
+        $quest = "$num";
+        $correct = isPrime($num);
         return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
     };
 }

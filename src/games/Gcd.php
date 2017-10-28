@@ -9,16 +9,12 @@ function gcd($a, $b)
 
 function brain_gcd()
 {
-    return function ($gamesCount) {
+    return function () {
         $hello = "Find the greatest common divisor of given numbers.";
-        $quest = [];
-        $correct = [];
-        for ($i = 0; $i < $gamesCount; $i++) {
             $num1 = rand(2, 100);
             $num2 = rand(2, 100);
-            $quest[] = "$num1, $num2";
-            $correct[] = gcd($num1, $num2);
-        }
+            $quest = "$num1, $num2";
+            $correct = gcd($num1, $num2);
         return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
     };
 }

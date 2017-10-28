@@ -19,19 +19,15 @@ function progression()
 
 function brain_progression()
 {
-    return function ($gamesCount) {
+    return function () {
         $hello = "What number is missing in this progression?";
-        $quest = [];
-        $correct = [];
-        for ($i = 0; $i < 3; $i++) {
-            $progression = progression();
-            $progr = $progression['progr'];
-            $progrCount = $progression['progrCount'];
-            $randNum = rand(1, $progrCount);
-            $progr[$randNum] = '..';
-            $quest[] = implode(', ', $progr);
-            $correct[] = $progr[0] + ($randNum) * $progression['step'];
-        }
+        $progression = progression();
+        $progr = $progression['progr'];
+        $progrCount = $progression['progrCount'];
+        $randNum = rand(1, $progrCount);
+        $progr[$randNum] = '..';
+        $quest = implode(', ', $progr);
+        $correct = $progr[0] + ($randNum) * $progression['step'];
         return ['hello' => $hello, 'quest' => $quest, 'correct' => $correct];
     };
 }
