@@ -35,5 +35,5 @@ function brain_balance()
 
 function run()
 {
-    \BrainGames\Cli\run(brain_balance());
+    \BrainGames\GameCore\run(brain_balance());
 }

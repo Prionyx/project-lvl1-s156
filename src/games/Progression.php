@@ -34,5 +34,5 @@ function brain_progression()
 
 function run()
 {
-    \BrainGames\Cli\run(brain_progression());
+    \BrainGames\GameCore\run(brain_progression());
 }

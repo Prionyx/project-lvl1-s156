@@ -30,5 +30,5 @@ function brain_isPrime()
 
 function run()
 {
-    \BrainGames\Cli\run(brain_isPrime());
+    \BrainGames\GameCore\run(brain_isPrime());
 }

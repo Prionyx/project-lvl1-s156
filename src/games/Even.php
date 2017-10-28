@@ -19,5 +19,5 @@ function brain_even()
 
 function run()
 {
-    \BrainGames\Cli\run(brain_even());
+    \BrainGames\GameCore\run(brain_even());
 }

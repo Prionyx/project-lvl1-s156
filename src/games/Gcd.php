@@ -21,5 +21,5 @@ function brain_gcd()
 
 function run()
 {
-    \BrainGames\Cli\run(brain_gcd());
+    \BrainGames\GameCore\run(brain_gcd());
 }

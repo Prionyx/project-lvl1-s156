@@ -35,5 +35,5 @@ function brain_calc()
 
 function run()
 {
-    \BrainGames\Cli\run(brain_calc());
+    \BrainGames\GameCore\run(brain_calc());
 }

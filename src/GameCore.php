@@ -4,7 +4,7 @@ namespace BrainGames\GameCore;
 
 use function \cli\line;
 
-function game($scenario = null)
+function run($scenario = null)
 {
     $gamesCount = 3;
     $logics = [];

@@ -13,9 +13,8 @@
     "phpcs": "phpcs"
    },
   "autoload": {
-    "files": ["src/Cli.php", "src/GameCore.php", "src/games/Even.php", "src/games/Calc.php", "src/games/Gcd.php", "src/games/Balance.php", "src/games/Progression.php", "src/games/Prime.php"],
+    "files": ["src/GameCore.php", "src/games/Even.php", "src/games/Calc.php", "src/games/Gcd.php", "src/games/Balance.php", "src/games/Progression.php", "src/games/Prime.php"],
     "psr-4": {
-      "BrainGames\\Cli\\": "src",
       "BrainGames\\GameCore\\": "src",
       "BrainGames\\Even\\": "src/games",
       "BrainGames\\Calc\\": "src/games",
